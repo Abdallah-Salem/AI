@@ -83,7 +83,7 @@ maze = createMaze2()
 q = queue.Queue()
 q.put("")
 path = ""
-s= [0,5]
+s= [0,5] #specify the starting point in the Maze
 while not findExit(maze,s,path):
     path= q.get()
     for m in ["L","R","U","D"]:
